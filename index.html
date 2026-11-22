@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>行情提醒 — PriceAlerts</title>
+<style>
+  :root { --fg:#1d1d1f; --muted:#6e6e73; --line:#e5e5ea; --accent:#0a84ff; --bg:#fff; }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; padding:32px 20px 64px;
+    font:16px/1.75 -apple-system,BlinkMacSystemFont,"SF Pro SC","PingFang SC","Helvetica Neue",Arial,sans-serif;
+    color:var(--fg); background:var(--bg); -webkit-text-size-adjust:100%;
+  }
+  main { max-width:720px; margin:0 auto; }
+  nav { margin:0 0 26px; padding-bottom:14px; border-bottom:1px solid var(--line); font-size:14px; }
+  nav a { margin-right:16px; }
+  h1 { font-size:26px; line-height:1.3; margin:0 0 6px; letter-spacing:-.02em; }
+  .sub { color:var(--muted); font-size:14px; margin:0 0 28px; }
+  h2 { font-size:18px; margin:34px 0 10px; padding-top:18px; border-top:1px solid var(--line); }
+  h2:first-of-type { border-top:none; padding-top:0; }
+  p { margin:10px 0; }
+  ul,ol { margin:10px 0; padding-left:22px; }
+  li { margin:6px 0; }
+  code { background:#f5f5f7; padding:1px 5px; border-radius:4px; font-size:14px; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .note { background:#f5f5f7; border-radius:10px; padding:14px 16px; margin:18px 0; font-size:14px; color:var(--muted); }
+  .card { border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin:16px 0; }
+  .card h3 { margin:0 0 6px; font-size:16px; }
+  .card p { margin:4px 0; color:var(--muted); font-size:14px; }
+  footer { margin-top:44px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }
+
+  .hero { text-align:center; padding:28px 0 8px; }
+  .hero .icon {
+    width:84px; height:84px; border-radius:20px; margin:0 auto 16px;
+    background:linear-gradient(160deg,#0a84ff,#0055cc);
+    display:flex; align-items:center; justify-content:center;
+    font-size:40px; color:#fff;
+  }
+  .hero h1 { font-size:28px; margin:0 0 8px; }
+  .hero p { color:var(--muted); margin:0; }
+  .grid { display:grid; gap:12px; margin:26px 0; }
+  @media (min-width:600px) { .grid { grid-template-columns:1fr 1fr; } }
+  .grid a.card { display:block; text-decoration:none; color:inherit; transition:border-color .15s; }
+  .grid a.card:hover { border-color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="hero">
+    <div class="icon">📈</div>
+    <h1>行情提醒</h1>
+    <p>实时行情 · 自选 · 到价提醒</p>
+  </div>
+
+  <div class="grid">
+    <a class="card" href="./support.html">
+      <h3>技术支持 →</h3>
+      <p>常见问题、故障排查、邮件联系</p>
+    </a>
+    <a class="card" href="./privacy.html">
+      <h3>隐私政策 →</h3>
+      <p>我们收集什么、数据存在哪、你的权利</p>
+    </a>
+    <a class="card" href="./terms.html">
+      <h3>用户协议 →</h3>
+      <p>服务范围、免责说明、使用规范</p>
+    </a>
+    <a class="card" href="./privacy-en.html">
+      <h3>Privacy Policy (EN) →</h3>
+      <p>English version of the privacy policy</p>
+    </a>
+  </div>
+
+  <h2>关于这个应用</h2>
+  <p>行情提醒是一款轻量的加密行情工具，专注把「价格」和「提醒」两件事做干净。</p>
+  <ul>
+    <li>覆盖市值前 200 的主流币种，价格与 24 小时涨跌幅</li>
+    <li>7 / 30 / 90 天走势图</li>
+    <li>星标自选，只盯你关心的那几个</li>
+    <li>到价提醒，触发后本地通知推送一次</li>
+    <li>无广告、无弹窗、无诱导充值</li>
+  </ul>
+  <p>数据来自 CoinGecko 等公开接口，仅供参考，不构成投资建议。本应用不提供交易、充值、提现、钱包托管等任何资金相关功能。</p>
+
+  <footer>
+    行情提醒（PriceAlerts）　Bundle ID: com.jixui.pricealerts<br>
+    &copy; 2026 Hakan Gokcedere. All rights reserved.
+  </footer>
+</main>
+</body>
+</html>
